@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+		<meta charset="UTF-8">
+		<title>ScopeEqual</title>
+		<link rel="stylesheet" href="framework/bootstrap-3.0.0/css/bootstrap.min.css" />
+	</head>
+	<body>
+		<div ng-controller="MyCtrl">
+			Ctrl:
+			<br />
+			<input type="text" ng-model="ctrlFlavor" />
+			<br />
+			Directive:
+			<br />
+			<drink flavor="ctrlFlavor"></drink>
+		</div>
+	</body>
+	<script src="framework/angular-1.3.0.14/angular.js"></script>
+	<script src="ScopeEqual.js"></script>
+</html>
